@@ -1,0 +1,16 @@
+.mapdetails-wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  color: #ccc;
+}
