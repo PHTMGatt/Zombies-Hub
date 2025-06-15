@@ -32,10 +32,6 @@ a {
   color: inherit;
 }
 
-.main-content {
-  padding-bottom: 4rem;
-}
-
 /* 4) Breakpoint Tokens */
 :root {
   --bp-sm: 640px;
