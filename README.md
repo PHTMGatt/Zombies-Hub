@@ -5,7 +5,7 @@
 ## 🚀 Live Demo
 
 Check it out on Render:  
-[https://your-zombies-hub.onrender.com](https://your-zombies-hub.onrender.com)
+[https://zombies-hub.onrender.com](https://zombies-hub.onrender.com)
 
 ## 📸 Screenshot
 
