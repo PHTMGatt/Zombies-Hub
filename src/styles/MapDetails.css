@@ -1,0 +1,18 @@
+/* src/styles/MapDetails.css */
+
+/* fill the viewport below the navbar */
+.iframe-container {
+  position: fixed;
+  top: var(--nav-height);   /* pulls in your 70px height from NavBar.css */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;               /* just in case */
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

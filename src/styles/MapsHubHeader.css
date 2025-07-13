@@ -1,0 +1,31 @@
+.maps-hub-header {
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.maps-hub-title {
+  margin: 0;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.maps-hub-nav {
+  margin-left: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.maps-hub-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.maps-hub-nav a.active {
+  border-bottom: 2px solid #fff;
+}
