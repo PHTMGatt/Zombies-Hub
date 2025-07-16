@@ -11,7 +11,7 @@ import SideEEImg         from '../assets/images/Featured/sideEE.jpg'
 const featuredMaps = [
   {
     name: 'All Maps',
-    renderLink: '/map-list',
+    renderLink: '/allmaps',
     slug: null,
     image: AllMapsImg,
   },
@@ -35,7 +35,7 @@ const featuredMaps = [
   },
   {
     name: 'Der Eisendrache',
-    renderLink: '/maps/der-eisendrache',
+    //renderLink: 'NA',
     slug: 'der-eisendrache',
     image: DerEisendracheImg,
   },
@@ -47,7 +47,7 @@ const featuredMaps = [
   },
   {
     name: 'Side Easter Eggs',
-    renderLink: '/ee-maps',
+    renderLink: '/side-easter-eggs',
     slug: null,
     image: SideEEImg,
   },

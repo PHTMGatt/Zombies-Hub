@@ -1,11 +1,12 @@
-// src/components/Footer.jsx
+// File: Footer.jsx
+
 import React from 'react';
-import '../styles/Footer.css';
+import '../styles/compStyles/Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2025 Zombies Hub. All rights reserved.</p>
+      <p className="footer__text">© 2025 Zombies Hub. All rights reserved.</p>
     </footer>
   );
 };

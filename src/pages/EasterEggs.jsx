@@ -1,37 +1,64 @@
-// src/pages/EasterEggMaps.jsx
-import React from 'react'
-import mapData from '../data/mapData'
-import MapCard from '../components/MapCard'
-import '../styles/Maps.css'
+// src/pages/EasterEggs.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import mapData from '../data/mapData';
+import guides from '../data/EasterEggGuides';
+import MapCard from '../components/MapCard';
+import MapsHubHeader from '../components/MapsHubHeader';
+import '../styles/pageStyles/AllMaps.css';
 
-export default function EasterEggMaps() {
+export default function EasterEggs() {
   return (
-    <div className="maps-wrapper">
-      <h1 className="page-title">Easter Egg Maps</h1>
-      <p className="page-subtitle">
-        All Easter Eggs BO1–BO3
-      </p>
+    <>
+      <MapsHubHeader
+        title="Easter Egg Maps"
+        subtitle="All Easter Eggs BO1–BO3"
+      />
 
-      {["Black Ops 1", "Black Ops 2", "Black Ops 3"].map((game) => {
-        const ee = mapData.filter(m => m.game === game && m.isEasterEgg)
-        if (!ee.length) return null
+      <div className="maps-wrapper">
+        {['Black Ops 1', 'Black Ops 2', 'Black Ops 3'].map((game) => {
+          const section = mapData.filter(m => m.game === game && m.isEasterEgg);
+          if (!section.length) return null;
 
-        return (
-          <section className="game-section" key={game}>
-            <div className="game-header">
-              <span className="game-title">{game}</span>
-            </div>
-            <div className="maps-grid">
-              {ee.map(m => (
-                <MapCard
-                  key={m.slug || m.name}
-                  map={m}
-                />
-              ))}
-            </div>
-          </section>
-        )
-      })}
-    </div>
-  )
+          return (
+            <section className="game-section" key={game}>
+              <div className="game-header">
+                <span className="game-title">{game}</span>
+              </div>
+
+              <div className="maps-grid">
+                {section.map((map) => {
+                  const guide = guides.find(g => g.slug === map.slug);
+
+                  // Route to external render guide
+                  if (map.renderLink) {
+                    return (
+                      <Link
+                        key={map.slug}
+                        to={map.renderLink}
+                        style={{ display: 'contents' }}
+                      >
+                        <MapCard map={map} disableLink />
+                      </Link>
+                    );
+                  }
+
+                  // Route to internal Easter Egg guide
+                  return (
+                    <Link
+                      key={map.slug}
+                      to={`/easter-eggs/${map.slug}`}
+                      style={{ display: 'contents' }}
+                    >
+                      <MapCard map={map} disableLink />
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
+      </div>
+    </>
+  );
 }

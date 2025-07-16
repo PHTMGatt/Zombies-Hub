@@ -1,51 +1,32 @@
-// src/App.jsx
-import React, { useEffect } from 'react'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation
-} from 'react-router-dom'
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 
-import Navbar     from './components/Navbar'
-import Footer     from './components/Footer'
-import Home       from './pages/Home'
-import AllMaps    from './pages/AllMaps'
-import EasterEggs from './pages/EasterEggs'
-import MapDetails from './pages/MapDetails'
-import MapInfo    from './pages/MapInfo' // ← add this!
-
-import './styles/Global.css'
+import Navbar    from './components/Navbar';
+import Footer    from './components/Footer';
+import AppRoutes from './Routes';
 
 function AppContent() {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
 
-  const isMapPage  = pathname.startsWith('/maps/')
-  const isInfoPage = pathname.startsWith('/info/')
+  // Toggle body class for full-screen iframe maps
+  const isMapPage = pathname.startsWith('/maps/');
 
-  // enable scroll lock ONLY on <html> for map iframe pages
   useEffect(() => {
-    document.documentElement.classList.toggle('map-page', isMapPage)
-  }, [isMapPage])
+    document.documentElement.classList.toggle('map-page', isMapPage);
+  }, [isMapPage]);
 
   return (
     <div className="app-container">
       <Navbar />
 
       <main className="main-content">
-        <Routes>
-          <Route path="/"             element={<Home />} />
-          <Route path="/allmaps"      element={<AllMaps />} />
-          <Route path="/eemaps"       element={<EasterEggs />} />
-          <Route path="/maps/:slug"   element={<MapDetails />} />
-          <Route path="/info/:slug"   element={<MapInfo />} /> {/* NEW */}
-        </Routes>
+        <AppRoutes />
       </main>
 
-      {/* Hide footer only on iframe map pages, not lore pages */}
+      {/* Hide footer on full-map render pages */}
       {!isMapPage && <Footer />}
     </div>
-  )
+  );
 }
 
 export default function App() {
@@ -53,5 +34,5 @@ export default function App() {
     <Router>
       <AppContent />
     </Router>
-  )
+  );
 }

@@ -110,3 +110,56 @@
    -3px -3px 0 rgba(255,255,255,0.15);
   z-index: 5;
 }
+
+/* --------------------------
+   📱 Mobile Responsiveness
+   -------------------------- */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .card {
+    height: 160px;
+  }
+
+  .card.featured {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1.5rem 1rem;
+  }
+
+  .home-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    height: 140px;
+  }
+
+  .card.featured {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+}

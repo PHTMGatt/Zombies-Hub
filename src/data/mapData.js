@@ -11,6 +11,7 @@ const coverModules = import.meta.glob(
   { eager: true }
 );
 
+import { SlUserFollowing } from 'react-icons/sl';
 import motdCover from '../assets/images/Featured/MOTD.jpg';
 
 function getKey(path) {
@@ -80,6 +81,7 @@ const mapData = [
   },
   {
     name: "Ascension",
+    slug: "ascension",
     game: "Black Ops 1",
     dlc: "DLC 1 – First Strike",
     isEasterEgg: true,
@@ -89,6 +91,7 @@ const mapData = [
   },
   {
     name: "Call of the Dead",
+    slug: "call of the dead",
     game: "Black Ops 1",
     dlc: "DLC 2 – Escalation",
     isEasterEgg: true,
@@ -107,6 +110,7 @@ const mapData = [
   },
   {
     name: "Moon",
+    slug: "moon",
     game: "Black Ops 1",
     dlc: "DLC 4 – Rezurrection",
     isEasterEgg: true,
@@ -173,9 +177,11 @@ const mapData = [
   },
   {
     name: "Mob of the Dead",
+    slug: "mob of the dead",
     game: "Black Ops 2",
     dlc: "DLC 2 – Uprising",
     isEasterEgg: true,
+    renderLink: 'https://motd-guide.onrender.com',
     coverImage: motdCover,
     layoutImage: getLayout("mob of the dead"),
     hoverImage: dlcArt["uprising"]
@@ -191,9 +197,11 @@ const mapData = [
   },
   {
     name: "Origins",
+    slug: "origins",
     game: "Black Ops 2",
     dlc: "DLC 4 – Apocalypse",
     isEasterEgg: true,
+    renderLink: 'https://origins-wtyd.onrender.com',
     coverImage: getCover("origins"),
     layoutImage: getLayout("origins"),
     hoverImage: dlcArt["apocalypse"]
@@ -239,27 +247,33 @@ const mapData = [
   },
   {
     name: "Zetsubou No Shima",
+    slug: "zetsubou no shima",
     game: "Black Ops 3",
     dlc: "DLC 2 – Eclipse",
     isEasterEgg: true,
+    renderLink: 'https://zetsubou-guide.onrender.com',
     coverImage: getCover("zetsubou no shima"),
     layoutImage: getLayout("zetsubou no shima"),
     hoverImage: dlcArt["eclipse"]
   },
   {
     name: "Gorod Krovi",
+    slug: "gorod krovi",
     game: "Black Ops 3",
     dlc: "DLC 3 – Descent",
     isEasterEgg: true,
+    renderLink: 'https://gorod-krovi-guide.onrender.com',
     coverImage: getCover("gorod krovi"),
     layoutImage: getLayout("gorod krovi"),
     hoverImage: dlcArt["descent"]
   },
   {
     name: "Revelations",
+    slug: "revelations",
     game: "Black Ops 3",
     dlc: "DLC 4 – Salvation",
     isEasterEgg: true,
+    renderLink: 'https://revelations-guide.onrender.com',
     coverImage: getCover("revelations"),
     layoutImage: getLayout("revelations"),
     hoverImage: dlcArt["salvation"]
@@ -293,6 +307,7 @@ const mapData = [
   },
   {
     name: "Moon",
+    slug: "moon",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: true,

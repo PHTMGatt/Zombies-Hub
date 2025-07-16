@@ -25,7 +25,6 @@ import Origins2Layout       from '../assets/images/BO2/Origins.webp';
 // ─── BO3 Layout Blueprints ─────────────────────────────────────────────
 import ShadowsOfEvilLayout  from '../assets/images/BO3/Shadows_of_Evil.webp';
 import TheGiantLayout       from '../assets/images/BO3/The_Giant.webp';
-// 🔧 Fixed: this is .webp on disk, not .jpg
 import DOA2Layout           from '../assets/images/BO3/Dead_Ops_Arcade_II.webp';
 import DerEisendracheLayout from '../assets/images/BO3/Der_Eisendrache.webp';
 import ZetsubouLayout       from '../assets/images/BO3/Zetsubou_No_Shima.webp';
@@ -60,7 +59,7 @@ import ZombieChroniclesArt  from '../assets/images/DLC/Zombie_Chronicles.png';
 import NachtCover           from '../assets/images/Maps/Nacht_der_Untoten.jpg';
 import KinoCover            from '../assets/images/Maps/Kino_der_Toten.jpg';
 import FiveCover            from '../assets/images/Maps/Five.jpg';
-import DeadOpsArcadeCover   from '../assets/images/Maps/Dead_Ops_Arcade.jpg';
+import DeadOpsArcadeCover   from '../assets/images/BO1/Dead_Ops_Arcade.webp';
 import DerEisendracheCover  from '../assets/images/Maps/Der_Eisendrache.jpg';
 import AscensionCover       from '../assets/images/Maps/Ascension.jpg';
 import CallOfTheDeadCover   from '../assets/images/Maps/Call_of_the_Dead.jpg';
@@ -71,13 +70,12 @@ import ShiNoNumaCover       from '../assets/images/Maps/Shi_No_Numa.jpg';
 import TranzitCoverMap      from '../assets/images/Maps/Tranzit.avif';
 import NuketownCover        from '../assets/images/Maps/NukeTown.jpg';
 import DieRiseCover         from '../assets/images/Maps/Die_Rise.webp';
-import MobOfTheDeadCover    from '../assets/images/Maps/Mob_of_the_Dead.jpg';
+import MobOfTheDeadCover    from '../assets/images/BO2/Mob_of_the_Dead.webp';
 import BuriedCover          from '../assets/images/Maps/Buried.jpg';
 import OriginsCover         from '../assets/images/Maps/Origins.jpg';
 import ShadowsOfEvilCover   from '../assets/images/Maps/Shadows_of_Evil.jpg';
 import TheGiantCover        from '../assets/images/Maps/The_Giant.jpg';
-// Cover for DOA2 is .jpg
-import DOA2Cover            from '../assets/images/Maps/Dead_Ops_Arcade_II.jpg';
+import DOA2Cover            from '../assets/images/BO3/Dead_Ops_Arcade_II.webp';
 import ZetsubouCover        from '../assets/images/Maps/Zetsubou_No_Shima.jpg';
 import GorodKroviCover      from '../assets/images/Maps/Gorod_Krovi.jpg';
 import RevelationsCover     from '../assets/images/Maps/Revelations.jpg';
