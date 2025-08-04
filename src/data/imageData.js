@@ -56,7 +56,7 @@ import NukeTownArt          from '../assets/images/DLC/NukeTown.png';
 import ZombieChroniclesArt  from '../assets/images/DLC/Zombie_Chronicles.png';
 
 // ─── Cropped Map Covers ──────────────────────────────────────────────────
-import NachtCover           from '../assets/images/Maps/Nacht_der_Untoten.jpg';
+import NachtCover           from '../assets/images/Maps/Nacht_Der_Untoten.jpg';
 import KinoCover            from '../assets/images/Maps/Kino_der_Toten.jpg';
 import FiveCover            from '../assets/images/Maps/Five.jpg';
 import DeadOpsArcadeCover   from '../assets/images/BO1/Dead_Ops_Arcade.webp';
@@ -79,7 +79,7 @@ import DOA2Cover            from '../assets/images/BO3/Dead_Ops_Arcade_II.webp';
 import ZetsubouCover        from '../assets/images/Maps/Zetsubou_No_Shima.jpg';
 import GorodKroviCover      from '../assets/images/Maps/Gorod_Krovi.jpg';
 import RevelationsCover     from '../assets/images/Maps/Revelations.jpg';
-import Nacht3Cover          from '../assets/images/Maps/Nacht_der_Untoten.jpg';
+import Nacht3Cover          from '../assets/images/Maps/Nacht_Der_Untoten.jpg';
 import Kino3Cover           from '../assets/images/Maps/Kino_der_Toten.jpg';
 import ShangriLa3Cover      from '../assets/images/Maps/Shangri_La.jpg';
 import Moon3Cover           from '../assets/images/Maps/Moon.jpg';
