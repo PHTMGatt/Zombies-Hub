@@ -35,7 +35,7 @@ const featuredMaps = [
   },
   {
     name: 'Der Eisendrache',
-    //renderLink: 'NA',
+    renderLink: 'https://der-eisendrache-guide.onrender.com',
     slug: 'der-eisendrache',
     image: DerEisendracheImg,
   },

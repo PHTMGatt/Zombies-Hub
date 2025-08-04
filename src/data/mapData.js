@@ -241,6 +241,7 @@ const mapData = [
     game: "Black Ops 3",
     dlc: "DLC 1 – Awakening",
     isEasterEgg: true,
+    renderLink: 'https://der-eisendrache-guide.onrender.com',
     coverImage: getCover("der eisendrache"),
     layoutImage: getLayout("der eisendrache"),
     hoverImage: dlcArt["awakening"]
