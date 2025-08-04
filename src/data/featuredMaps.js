@@ -1,13 +1,12 @@
 // src/data/featuredMaps.js
 
-import AllMapsImg        from '../assets/tempImg/Featured/allMaps.jpg';
+import AllMapsImg        from '../assets/tempImg/Featured/AllMaps.jpg';
 import OriginsImg        from '../assets/tempImg/Featured/Origins.webp';
 import RevelationsImg    from '../assets/tempImg/Featured/Rev.jpg';
 import MobOfTheDeadImg   from '../assets/tempImg/Featured/MOTD.jpg';
 import DerEisendracheImg from '../assets/tempImg/Featured/DE.webp';
 import GorodKroviImg     from '../assets/tempImg/Featured/GK.jpg';
-import SideEEImg         from '../assets/tempImg/Featured/sideEE.jpg';
-
+import SideEEImg         from '../assets/tempImg/Featured/SideEE.jpg';
 
 const featuredMaps = [
   {
@@ -52,6 +51,6 @@ const featuredMaps = [
     slug: null,
     image: SideEEImg,
   },
-]
+];
 
-export default featuredMaps
+export default featuredMaps;
