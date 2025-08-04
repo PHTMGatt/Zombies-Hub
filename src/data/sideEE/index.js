@@ -1,8 +1,8 @@
 // src/data/sideEE/index.js
 
-import kino from './kino';
-import gk   from './gk';
-import de   from './de';
+import kino from './Kino';
+import gk   from './GK';
+import de   from './DE';
 import soe  from './SOE';   // ← import your new file
 
 export default {
