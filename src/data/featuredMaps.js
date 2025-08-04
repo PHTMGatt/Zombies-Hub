@@ -1,6 +1,6 @@
 // src/data/featuredMaps.js
 
-import AllMapsImg        from '../assets/images/Featured/allMaps.jpg';
+import AllMapsImg        from '../assets/images/Featured/AllMaps.jpg';
 import OriginsImg        from '../assets/images/Featured/Origins.webp';
 import RevelationsImg    from '../assets/images/Featured/Rev.jpg';
 import MobOfTheDeadImg   from '../assets/images/Featured/MOTD.jpg';
