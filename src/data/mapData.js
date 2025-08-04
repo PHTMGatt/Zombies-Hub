@@ -12,7 +12,7 @@ const coverModules = import.meta.glob(
 );
 
 import { SlUserFollowing } from 'react-icons/sl';
-import motdCover from '../assets/images/Featured/MOTD.jpg';
+import motdCover from '../assets/tempImg/Featured/MOTD.jpg';
 
 function getKey(path) {
   return path

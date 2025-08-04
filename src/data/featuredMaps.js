@@ -1,12 +1,13 @@
 // src/data/featuredMaps.js
 
-import AllMapsImg        from '../assets/images/Featured/allMaps.jpg'
-import OriginsImg        from '../assets/images/Featured/Origins.webp'
-import RevelationsImg    from '../assets/images/Featured/Rev.jpg'
-import MobOfTheDeadImg   from '../assets/images/Featured/MOTD.jpg'
-import DerEisendracheImg from '../assets/images/Featured/DE.webp'
-import GorodKroviImg     from '../assets/images/Featured/GK.jpg'
-import SideEEImg         from '../assets/images/Featured/sideEE.jpg'
+import AllMapsImg        from '../assets/tempImg/Featured/allMaps.jpg';
+import OriginsImg        from '../assets/tempImg/Featured/Origins.webp';
+import RevelationsImg    from '../assets/tempImg/Featured/Rev.jpg';
+import MobOfTheDeadImg   from '../assets/tempImg/Featured/MOTD.jpg';
+import DerEisendracheImg from '../assets/tempImg/Featured/DE.webp';
+import GorodKroviImg     from '../assets/tempImg/Featured/GK.jpg';
+import SideEEImg         from '../assets/tempImg/Featured/sideEE.jpg';
+
 
 const featuredMaps = [
   {
