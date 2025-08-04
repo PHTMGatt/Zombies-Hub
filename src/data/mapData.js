@@ -12,7 +12,7 @@ const coverModules = import.meta.glob(
 );
 
 import { SlUserFollowing } from 'react-icons/sl';
-import motdCover from '../assets/tempImg/BO2/Mob_Of_The_Dead.webp';
+import motdCover from '../assets/images/BO2/Mob_Of_The_Dead.webp';
 
 function getKey(path) {
   return path
