@@ -1,3 +1,9 @@
+import imageData from '../data/imageData';
+import { SlUserFollowing } from 'react-icons/sl';
+import motdCover from '../assets/images/BO2/Mob_Of_The_Dead.webp';
+import TranzitCoverMap from '../assets/images/Maps/Tranzit.avif';
+import TranzitLayout from '../assets/images/BO2/Tranzit.webp';
+
 const layoutModules = import.meta.glob(
   '../assets/images/BO*/*.{webp,jpg,png,avif}',
   { eager: true }
@@ -10,9 +16,6 @@ const coverModules = import.meta.glob(
   '../assets/images/Maps/*.{jpg,png,webp,avif}',
   { eager: true }
 );
-
-import { SlUserFollowing } from 'react-icons/sl';
-import motdCover from '../assets/images/BO2/Mob_Of_The_Dead.webp';
 
 function getKey(path) {
   return path
@@ -45,6 +48,7 @@ const getLayout = (key) => layouts[key] || null;
 const mapData = [
   {
     name: "Nacht der Untoten",
+    slug: "nacht-der-untoten",
     game: "Black Ops 1",
     dlc: "Base Game",
     isEasterEgg: false,
@@ -54,6 +58,7 @@ const mapData = [
   },
   {
     name: "Kino der Toten",
+    slug: "kino-der-toten",
     game: "Black Ops 1",
     dlc: "Base Game",
     isEasterEgg: false,
@@ -63,6 +68,7 @@ const mapData = [
   },
   {
     name: "Five",
+    slug: "five",
     game: "Black Ops 1",
     dlc: "Base Game",
     isEasterEgg: false,
@@ -72,6 +78,7 @@ const mapData = [
   },
   {
     name: "Dead Ops Arcade",
+    slug: "dead-ops-arcade",
     game: "Black Ops 1",
     dlc: "Base Game",
     isEasterEgg: false,
@@ -91,7 +98,7 @@ const mapData = [
   },
   {
     name: "Call of the Dead",
-    slug: "call of the dead",
+    slug: "call-of-the-dead",
     game: "Black Ops 1",
     dlc: "DLC 2 – Escalation",
     isEasterEgg: true,
@@ -101,6 +108,7 @@ const mapData = [
   },
   {
     name: "Shangri-La",
+    slug: "shangri-la",
     game: "Black Ops 1",
     dlc: "DLC 3 – Annihilation",
     isEasterEgg: true,
@@ -120,6 +128,7 @@ const mapData = [
   },
   {
     name: "Verrückt",
+    slug: "verrückt",
     game: "Black Ops 1",
     dlc: "DLC 4 – Rezurrection",
     isEasterEgg: false,
@@ -129,6 +138,7 @@ const mapData = [
   },
   {
     name: "Shi No Numa",
+    slug: "shi-no-numa",
     game: "Black Ops 1",
     dlc: "DLC 4 – Rezurrection",
     isEasterEgg: false,
@@ -138,6 +148,7 @@ const mapData = [
   },
   {
     name: "Der Riese",
+    slug: "der-riese",
     game: "Black Ops 1",
     dlc: "DLC 4 – Rezurrection",
     isEasterEgg: false,
@@ -149,16 +160,19 @@ const mapData = [
   // Black Ops 2 --------------------
 
   {
-    name: "Tranzit",
-    game: "Black Ops 2",
-    dlc: "Base Game",
-    isEasterEgg: true,
-    coverImage: getCover("tranzit"),
-    layoutImage: getLayout("tranzit"),
-    hoverImage: null
+    name:        "Tranzit",
+    slug:        "tranzit",
+    game:        "Black Ops 2",
+    dlc:         "Base Game",
+    released:    "2012-11-01",            // <-- add your release date
+    description: "Traverse the ruined Pacific Northwest aboard an upgradable bus and …",
+    hasEasterEgg: true,
+    coverImage:  imageData.TranzitCoverMap,
+    layoutImage: imageData.TranzitLayout
   },
   {
     name: "Nuketown Zombies",
+    slug: "nuketown-zombies",
     game: "Black Ops 2",
     dlc: "DLC – Nuketown Zombies",
     isEasterEgg: false,
@@ -168,6 +182,7 @@ const mapData = [
   },
   {
     name: "Die Rise",
+    slug: "die-rise",
     game: "Black Ops 2",
     dlc: "DLC 1 – Revolution",
     isEasterEgg: true,
@@ -177,7 +192,7 @@ const mapData = [
   },
   {
     name: "Mob of the Dead",
-    slug: "mob of the dead",
+    slug: "mob-of-the-dead",
     game: "Black Ops 2",
     dlc: "DLC 2 – Uprising",
     isEasterEgg: true,
@@ -188,6 +203,7 @@ const mapData = [
   },
   {
     name: "Buried",
+    slug: "buried",
     game: "Black Ops 2",
     dlc: "DLC 3 – Vengeance",
     isEasterEgg: true,
@@ -211,6 +227,7 @@ const mapData = [
 
   {
     name: "Shadows of Evil",
+    slug: "shadows-of-evil",
     game: "Black Ops 3",
     dlc: "Base Game",
     isEasterEgg: true,
@@ -220,6 +237,7 @@ const mapData = [
   },
   {
     name: "The Giant",
+    slug: "the-giant",
     game: "Black Ops 3",
     dlc: "DLC – Giant",
     isEasterEgg: true,
@@ -229,6 +247,7 @@ const mapData = [
   },
   {
     name: "Dead Ops Arcade II",
+    slug: "dead-ops-arcade-ii",
     game: "Black Ops 3",
     dlc: "Bonus",
     isEasterEgg: false,
@@ -238,6 +257,7 @@ const mapData = [
   },
   {
     name: "Der Eisendrache",
+    slug: "der-eisendrache",
     game: "Black Ops 3",
     dlc: "DLC 1 – Awakening",
     isEasterEgg: true,
@@ -248,7 +268,7 @@ const mapData = [
   },
   {
     name: "Zetsubou No Shima",
-    slug: "zetsubou no shima",
+    slug: "zetsubou-no-shima",
     game: "Black Ops 3",
     dlc: "DLC 2 – Eclipse",
     isEasterEgg: true,
@@ -259,7 +279,7 @@ const mapData = [
   },
   {
     name: "Gorod Krovi",
-    slug: "gorod krovi",
+    slug: "gorod-krovi",
     game: "Black Ops 3",
     dlc: "DLC 3 – Descent",
     isEasterEgg: true,
@@ -281,6 +301,7 @@ const mapData = [
   },
   {
     name: "Nacht der Untoten",
+    slug: "nacht-der-untoten",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: false,
@@ -290,6 +311,7 @@ const mapData = [
   },
   {
     name: "Kino der Toten",
+    slug: "kino-der-toten",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: false,
@@ -299,6 +321,7 @@ const mapData = [
   },
   {
     name: "Shangri-La",
+    slug: "shangri-la",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: true,
@@ -318,15 +341,18 @@ const mapData = [
   },
   {
     name: "Origins",
+    slug: "origins",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: true,
+    renderLink: 'https://origins-wtyd.onrender.com',
     coverImage: getCover("origins"),
     layoutImage: getLayout("origins"),
     hoverImage: dlcArt["zombie chronicles"]
   },
   {
     name: "Shi No Numa",
+    slug: "shi-no-numa",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: false,
@@ -336,6 +362,7 @@ const mapData = [
   },
   {
     name: "Verrückt",
+    slug: "verrückt",
     game: "Black Ops 3",
     dlc: "Zombies Chronicles",
     isEasterEgg: false,

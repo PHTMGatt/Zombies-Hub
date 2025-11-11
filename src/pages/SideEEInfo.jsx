@@ -11,7 +11,7 @@ import '../styles/SideEE/SideEEInfo.css';
 const SIDE_EE_META = {
   kino: {
     label: 'Kino der Toten',
-    cover: imageData.KinoCover,
+    cover: imageData.Kino_Der_TotenCover,
     reelsIntro: 'Three film reels spawn randomly in these rooms after you teleport to Pack-a-Punch:',
     reels: [
       'Samantha’s Room – on the table, bed, or leaning against the rocking chair.',
@@ -24,9 +24,9 @@ const SIDE_EE_META = {
       'Radio 2 – atop the tower visible from the alley by the Double Tap Root Beer perk machine.',
     ],
   },
-  gk:  { label: 'Gorod Krovi',     cover: imageData.GorodKroviCover },
-  de:  { label: 'Der Eisendrache', cover: imageData.DerEisendracheCover },
-  soe: { label: 'Shadows of Evil', cover: imageData.ShadowsOfEvilCover },
+  gk:  { label: 'Gorod Krovi',     cover: imageData.Gorod_KroviCover },
+  de:  { label: 'Der Eisendrache', cover: imageData.Der_EisendracheCover },
+  soe: { label: 'Shadows of Evil', cover: imageData.Shadows_Of_EvilCover },
 };
 
 export default function SideEEInfo() {

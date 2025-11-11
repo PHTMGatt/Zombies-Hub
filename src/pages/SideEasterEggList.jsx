@@ -7,10 +7,10 @@ import '../styles/SideEE/SideEasterEggList.css';
 
 // Side Easter Egg maps data
 const MAPS = [
-  { key: 'kino', label: 'Kino der Toten',     cover: imageData.KinoCover },
-  { key: 'gk',   label: 'Gorod Krovi',        cover: imageData.GorodKroviCover },
-  { key: 'de',   label: 'Der Eisendrache',    cover: imageData.DerEisendracheCover },
-  { key: 'soe',  label: 'Shadows of Evil',    cover: imageData.ShadowsOfEvilCover },
+  { key: 'kino', label: 'Kino der Toten',     cover: imageData.Kino_Der_TotenCover },
+  { key: 'gk',   label: 'Gorod Krovi',        cover: imageData.Gorod_KroviCover },
+  { key: 'de',   label: 'Der Eisendrache',    cover: imageData.Der_EisendracheCover },
+  { key: 'soe',  label: 'Shadows of Evil',    cover: imageData.Shadows_Of_EvilCover },
 ];
 
 export default function SideEasterEggList() {

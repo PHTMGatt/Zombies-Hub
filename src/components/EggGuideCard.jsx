@@ -1,21 +1,29 @@
-// File: EggGuideCard.jsx
-
+// src/components/EggGuideCard.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/compStyles/EggGuideCard.css';
 
-export default function EggGuideCard({ slug, title, game, dlc, released, description, videoUrl }) {
-  // Extract YouTube video ID from various formats
+export default function EggGuideCard({
+  slug,
+  title,
+  game,
+  dlc,
+  released,
+  description,
+  videoUrl,
+}) {
+  // Extract YouTube ID
   const extractYouTubeID = url => {
     const match = url.match(/(?:\?v=|\/embed\/|\.be\/)([a-zA-Z0-9_-]{11})/);
     return match ? match[1] : null;
   };
-
   const videoId = extractYouTubeID(videoUrl);
-  const thumbnail = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null;
+  const thumbnail = videoId
+    ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+    : null;
 
   return (
-    <Link to={`/easter-eggs/${slug}`} className="egg-card">
+    <Link to={`/maps/${slug}`} className="egg-card">
       <div className="egg-card__media">
         {thumbnail ? (
           <img

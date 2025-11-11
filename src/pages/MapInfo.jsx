@@ -10,12 +10,14 @@ export default function MapInfo() {
   const { slug } = useParams();
   const info = mapInfo[slug];
 
-  if (!info) {
-    return <Navigate to="/coming-soon" replace />;
-  }
-
   const meta = mapData.find((m) => m.name === info.name) || {};
-  const banner = meta.coverImage;
+
+  const banner = meta.coverImage || meta.layoutImage;
+  
+  // console.log('MapInfo meta for', slug, ':', meta);
+  // console.log('Available slugs:', mapData.map(m => m.slug));
+  //  console.log('Looking for slug:', slug);
+
 
   return (
     <>
@@ -66,8 +68,8 @@ export default function MapInfo() {
               <p className="description">{info.description}</p>
             )}
 
-            <Link to="/easter-eggs" className="back-link">
-              ← Back to Easter Egg Maps
+            <Link to="/allMaps" className="back-link">
+              ← Back to Map list
             </Link>
           </div>
         </div>

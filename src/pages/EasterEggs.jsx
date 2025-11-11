@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import mapData from '../data/mapData';
-import guides from '../data/EasterEggGuides';
 import MapCard from '../components/MapCard';
 import MapsHubHeader from '../components/MapsHubHeader';
 import '../styles/pageStyles/AllMaps.css';
@@ -16,7 +15,7 @@ export default function EasterEggs() {
       />
 
       <div className="maps-wrapper">
-        {['Black Ops 1', 'Black Ops 2', 'Black Ops 3'].map((game) => {
+        {['Black Ops 1', 'Black Ops 2', 'Black Ops 3'].map(game => {
           const section = mapData.filter(m => m.game === game && m.isEasterEgg);
           if (!section.length) return null;
 
@@ -27,33 +26,15 @@ export default function EasterEggs() {
               </div>
 
               <div className="maps-grid">
-                {section.map((map) => {
-                  const guide = guides.find(g => g.slug === map.slug);
-
-                  // Route to external render guide
-                  if (map.renderLink) {
-                    return (
-                      <Link
-                        key={map.slug}
-                        to={map.renderLink}
-                        style={{ display: 'contents' }}
-                      >
-                        <MapCard map={map} disableLink />
-                      </Link>
-                    );
-                  }
-
-                  // Route to internal Easter Egg guide
-                  return (
-                    <Link
-                      key={map.slug}
-                      to={`/easter-eggs/${map.slug}`}
-                      style={{ display: 'contents' }}
-                    >
-                      <MapCard map={map} disableLink />
-                    </Link>
-                  );
-                })}
+                {section.map(map => (
+                  <Link
+                    key={map.slug}
+                    to={`/easter-eggs/${map.slug}`}
+                    style={{ display: 'contents' }}
+                  >
+                    <MapCard map={map} disableLink />
+                  </Link>
+                ))}
               </div>
             </section>
           );
