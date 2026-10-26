@@ -9,7 +9,7 @@ Check it out on Render:
 
 ## 📸 Screenshot
 
-![App Screenshot](src/assets/images/GHRM.jpg)
+![Zombies Hub portfolio artwork](https://raw.githubusercontent.com/PHTMGatt/12-React-Portfolio/a2c43d8301679dbda14ad06dc225d61e5515e431/src/assets/project-images/Zombies%20Hub.png)
 
 ## 🗺️ Sections
 
