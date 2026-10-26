@@ -9,7 +9,7 @@ Check it out on Render:
 
 ## 📸 Screenshot
 
-![App Screenshot](src/assets/images/GHRM.jpg)
+![App Screenshot](docs/portfolio/cover.webp)
 
 ## 🗺️ Sections
 
