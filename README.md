@@ -9,7 +9,7 @@ Check it out on Render:
 
 ## 📸 Screenshot
 
-![App Screenshot](docs/portfolio/cover.webp)
+![App Screenshot](https://raw.githubusercontent.com/PHTMGatt/12-React-Portfolio/main/src/assets/photos/Zombies%20Hub.png)
 
 ## 🗺️ Sections
 
